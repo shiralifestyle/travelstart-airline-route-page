@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="19px" viewBox="0 0 20 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>2A8C3745-A3C2-4EBD-96E9-6DD96655B658</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M8,21 L10,21 L15,13 L20.5,13 C21.33,13 22,12.33 22,11.5 C22,10.67 21.33,10 20.5,10 L15,10 L10,2 L8,2 L10.5,10 L5,10 L3.5,8 L2,8 L3,11.5 L2,15 L3.5,15 L5,13 L10.5,13 L8,21 Z" id="path-1"></path>
+    </defs>
+    <g id="Route-x-Airline-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DES-408_Route-x-Airline-page" transform="translate(-974.000000, -1560.000000)">
+            <g id="Route-information" transform="translate(142.000000, 1502.000000)">
+                <g id="Group-5" transform="translate(830.000000, 56.000000)">
+                    <g id="Icon/Action/ic_flight_takeoff-Copy-2">
+                        <g id="ic_plane_right">
+                            <polygon id="Bounds" points="0 0 24 0 24 24 0 24"></polygon>
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Icon" fill="#50656E" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
