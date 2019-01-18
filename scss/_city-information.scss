@@ -1,0 +1,28 @@
+$content-margin: 24px;
+
+.city-information {
+  background-image: url('../images/johannesburg_hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  h3 {
+    color: $white;
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__card, &__content {
+    background-color: $white;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+}

@@ -62,7 +62,7 @@ a {
 
 .overview__content {
   line-height: 24px;
-  margin-right: 25px;
+  margin-right: 24px;
 }
 
 .overview__content p {
@@ -86,4 +86,30 @@ a {
 
 .airline-logo {
   text-align: center;
+}
+
+.city-information {
+  background-image: url("../images/johannesburg_hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.city-information-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.city-information h3 {
+  color: #FFFFFF;
+}
+
+.city-information__card, .city-information__content {
+  background-color: #FFFFFF;
+}
+
+.city-information__item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
