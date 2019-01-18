@@ -1,3 +1,8 @@
+/*
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1280px;
+*/
 *, *:after, *:before {
   box-sizing: border-box;
 }
@@ -6,4 +11,62 @@ html, body {
   font-family: 'Helvetica', arial;
   padding: 0;
   margin: 0;
+  font-size: 16px;
+}
+
+.fixed-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 1280px) {
+  .fixed-container {
+    width: 995px;
+  }
+}
+
+h2, h3, h4, h5 {
+  color: #1E3945;
+}
+
+p {
+  font-size: 16px;
+  color: #1E3945;
+  line-height: 1.5;
+}
+
+a {
+  color: #1BB3F5;
+  text-decoration: none;
+}
+
+.card__text p,
+.popular-route-type p {
+  color: #50656E;
+}
+
+.card-btn {
+  background-color: #1BB3F5;
+  color: #FFFFFF;
+}
+
+.route-type {
+  color: #829198;
+}
+
+.overview-main {
+  display: flex;
+  flex-direction: row;
+  width: calc(100% - 280px - 25px);
+}
+
+.airline-overview {
+  width: 280px;
+  border-radius: 2px;
+  box-shadow: 0 0 2px 0 rgba(5, 35, 49, 0.14), 0 2px 2px 0 rgba(5, 35, 49, 0.12);
+}
+
+.airline-overview__item {
+  display: flex;
+  flex-direction: row;
 }
