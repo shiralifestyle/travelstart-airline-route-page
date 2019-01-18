@@ -57,16 +57,33 @@ a {
 .overview-main {
   display: flex;
   flex-direction: row;
-  width: calc(100% - 280px - 25px);
+  width: 100%;
+}
+
+.overview__content {
+  line-height: 24px;
+  margin-right: 25px;
+}
+
+.overview__content p {
+  margin-top: 0;
 }
 
 .airline-overview {
-  width: 280px;
+  width: 100%;
   border-radius: 2px;
   box-shadow: 0 0 2px 0 rgba(5, 35, 49, 0.14), 0 2px 2px 0 rgba(5, 35, 49, 0.12);
+  padding: 24px;
 }
 
 .airline-overview__item {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+.airline-logo {
+  text-align: center;
 }

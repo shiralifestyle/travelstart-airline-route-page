@@ -5,16 +5,34 @@ $content-margin: 25px;
 .overview-main {
   display: flex;
   flex-direction: row;
-  width: calc(100% - #{$sidebar-width} - #{$content-margin});
+  width: 100%;
+}
+
+.overview__content {
+  line-height: 24px;
+  margin-right: $content-margin;
+
+  p {
+    margin-top: 0;
+  }
 }
 
 .airline-overview {
-  width: $sidebar-width;
+  width: 100%;
   border-radius: 2px;
   box-shadow: 0 0 2px 0 rgba(5,35,49,0.14), 0 2px 2px 0 rgba(5,35,49,0.12);
+  padding: 24px;
 
   &__item {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 8px 0;
+   
   }
+} 
+
+.airline-logo {
+  text-align: center;
 }
