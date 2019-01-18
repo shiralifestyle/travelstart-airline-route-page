@@ -54,7 +54,11 @@ a {
   color: #829198;
 }
 
-.overview-main {
+.overview {
+  background-color: #FFFFFF;
+}
+
+.overview__main {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -69,14 +73,15 @@ a {
   margin-top: 0;
 }
 
-.airline-overview {
+.overview__card {
   width: 100%;
-  border-radius: 2px;
-  box-shadow: 0 0 2px 0 rgba(5, 35, 49, 0.14), 0 2px 2px 0 rgba(5, 35, 49, 0.12);
   padding: 24px;
+  border-radius: 2px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 2px 0 rgba(5, 35, 49, 0.14), 0 2px 2px 0 rgba(5, 35, 49, 0.12);
 }
 
-.airline-overview__item {
+.overview__item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -95,13 +100,13 @@ a {
   background-size: cover;
 }
 
+.city-information h3 {
+  color: #FFFFFF;
+}
+
 .city-information-container {
   display: flex;
   flex-direction: row;
-}
-
-.city-information h3 {
-  color: #FFFFFF;
 }
 
 .city-information__card, .city-information__content {

@@ -2,10 +2,14 @@ $sidebar-width: 280px;
 $content-margin: 24px;
 
 // 1280px
-.overview-main {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
+.overview {
+  background-color: $white;
+
+  &__main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
 
   &__content {
     line-height: 24px;
@@ -15,16 +19,23 @@ $content-margin: 24px;
       margin-top: 0;
     }
   }
-}
-  
-    &__item {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      font-size: 14px;
-      padding: 8px 0;
-    }
+
+  &__card {
+    width: 100%;
+    padding: 24px;
+    border-radius: 2px;	
+    background-color: $white;
+    box-shadow: 0 0 2px 0 rgba(5,35,49,0.14), 0 2px 2px 0 rgba(5,35,49,0.12);
   }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 8px 0;
+  }
+}
 
 .airline-logo {
   text-align: center;
