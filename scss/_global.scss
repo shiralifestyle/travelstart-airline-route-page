@@ -6,6 +6,7 @@ html, body {
   font-family: 'Helvetica', arial;
   padding: 0;
   margin: 0;
+  font-size: 16px;
 }
 
 .fixed-container {
@@ -16,4 +17,33 @@ html, body {
   @media (min-width: #{$screen-desktop-large}) {
     width: 995px;
   }
+}
+
+h2, h3, h4, h5 {
+  color: $blue-dianne;
+}
+
+p {
+  font-size: 16px;
+  color: $blue-dianne;
+  line-height: 1.5;
+}
+
+a {
+  color: $dodger-blue;
+  text-decoration: none;
+}
+
+.card__text p,
+.popular-route-type p {
+  color: $cutty-sark;
+}
+
+.card-btn {
+  background-color: $dodger-blue;
+  color: $white;
+}
+
+.route-type {
+  color: $regent-grey;
 }
