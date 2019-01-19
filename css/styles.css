@@ -61,24 +61,16 @@ a {
 .overview__main {
   display: flex;
   flex-direction: row;
-  width: 100%;
 }
 
 .overview__content {
-  line-height: 24px;
-  margin-right: 24px;
+  width: calc(100% - 280px - 24px);
+  margin-right: 25px;
 }
 
 .overview__content p {
   margin-top: 0;
-}
-
-.overview__card {
-  width: 100%;
-  padding: 24px;
-  border-radius: 2px;
-  background-color: #FFFFFF;
-  box-shadow: 0 0 2px 0 rgba(5, 35, 49, 0.14), 0 2px 2px 0 rgba(5, 35, 49, 0.12);
+  margin-bottom: 0;
 }
 
 .overview__item {
@@ -86,13 +78,27 @@ a {
   flex-direction: row;
   justify-content: space-between;
   font-size: 14px;
-  padding: 8px 0;
+  margin-top: 8px;
+}
+
+.overview__item-line-1 {
+  font-weight: bold;
+}
+
+aside {
+  border-radius: 2px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 2px 0 rgba(5, 35, 49, 0.14), 0 2px 2px 0 rgba(5, 35, 49, 0.12);
+  padding: 24px;
+  margin-bottom: 0;
+  width: 280px;
 }
 
 .airline-logo {
   text-align: center;
 }
 
+/* ---- City Information ---- */
 .city-information {
   background-image: url("../images/johannesburg_hero.jpg");
   background-repeat: no-repeat;
