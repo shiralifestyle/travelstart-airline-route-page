@@ -1,4 +1,4 @@
-$info-width: 260px;
+$info-width: 30%;
 $content-margin: 1.5rem;
 
 /* ---- City Information ---- */
@@ -11,7 +11,9 @@ $content-margin: 1.5rem;
 
   &-header h3 {
     color: $white;
-    transform: translatey(240px);
+    transform: translatey(170px);
+    font-size: 1.5rem;
+    font-weight: bold;
   }
 
   &-container {

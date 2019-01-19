@@ -57,6 +57,7 @@ a {
 
 .overview {
   background-color: #FFFFFF;
+  margin-bottom: 56px;
 }
 
 .overview__main {
@@ -117,7 +118,9 @@ aside {
 
 .city-information-header h3 {
   color: #FFFFFF;
-  transform: translatey(240px);
+  transform: translatey(170px);
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .city-information-container {
@@ -133,7 +136,7 @@ aside {
 }
 
 .city-information__content {
-  width: calc(100% - 260px - 1.5rem);
+  width: calc(100% - 30% - 1.5rem);
   margin-left: 24px;
   padding: 1.375rem;
 }
@@ -186,4 +189,38 @@ aside {
 
 .city-information__main-attractions {
   padding-top: 1.5rem;
+}
+
+.route {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  margin-top: 250px;
+}
+
+.route__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1.625rem;
+}
+
+.route__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.route .icon {
+  margin-bottom: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+.route .route-type {
+  font-size: 0.875rem;
+}
+
+.route .route-text {
+  line-height: 24px;
+  font-size: 1rem;
 }
