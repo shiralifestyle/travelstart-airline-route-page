@@ -15,7 +15,7 @@ html, body {
 
   // Desktop: 1280px
   @media (min-width: #{$screen-desktop-large}) {
-    width: 996px;
+    max-width: 1000px;
   }
 }
 

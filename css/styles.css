@@ -21,7 +21,7 @@ html, body {
 
 @media (min-width: 1280px) {
   .fixed-container {
-    width: 996px;
+    max-width: 1000px;
   }
 }
 
@@ -136,7 +136,7 @@ aside {
 }
 
 .city-information__content {
-  width: calc(100% - 30% - 1.5rem);
+  width: calc(100% - 335px - 24px);
   margin-left: 24px;
   padding: 1.375rem;
 }
@@ -149,6 +149,7 @@ aside {
 
 .city-information__content__card {
   padding-right: 0;
+  width: 335px;
 }
 
 .city-information__item {
