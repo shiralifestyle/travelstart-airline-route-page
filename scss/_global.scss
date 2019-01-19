@@ -15,12 +15,13 @@ html, body {
 
   // Desktop: 1280px
   @media (min-width: #{$screen-desktop-large}) {
-    width: 995px;
+    width: 996px;
   }
 }
 
 h2, h3, h4, h5 {
   color: $blue-dianne;
+  margin: 0;
 }
 
 p {

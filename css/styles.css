@@ -21,12 +21,13 @@ html, body {
 
 @media (min-width: 1280px) {
   .fixed-container {
-    width: 995px;
+    width: 996px;
   }
 }
 
 h2, h3, h4, h5 {
   color: #1E3945;
+  margin: 0;
 }
 
 p {
@@ -81,15 +82,23 @@ a {
   margin-top: 8px;
 }
 
-.overview__item-line-1 {
+.overview__item .line-1 {
   font-weight: bold;
+}
+
+.overview__item > div:nth-child(1) {
+  width: 60%;
+}
+
+.overview__item > div:nth-child(2) {
+  width: 35%;
 }
 
 aside {
   border-radius: 2px;
   background-color: #FFFFFF;
   box-shadow: 0 0 2px 0 rgba(5, 35, 49, 0.14), 0 2px 2px 0 rgba(5, 35, 49, 0.12);
-  padding: 24px;
+  padding: 22px;
   margin-bottom: 0;
   width: 280px;
 }
@@ -106,33 +115,75 @@ aside {
   background-size: cover;
 }
 
-.city-information h3 {
+.city-information-header h3 {
   color: #FFFFFF;
+  transform: translatey(240px);
 }
 
 .city-information-container {
   display: flex;
   flex-direction: row;
-  width: calc(100% - 264px - 24px);
+  transform: translatey(70%);
 }
 
 .city-information__card, .city-information__content {
-  background-color: #FFFFFF;
-  padding: 24px;
   border-radius: 2px;
   background-color: #FFFFFF;
   box-shadow: 0 0 2px 0 rgba(5, 35, 49, 0.14), 0 2px 2px 0 rgba(5, 35, 49, 0.12);
 }
 
+.city-information__content {
+  width: calc(100% - 260px - 1.5rem);
+  margin-left: 24px;
+  padding: 1.375rem;
+}
+
+.city-information__content p {
+  color: #50656E;
+  font-size: 14px;
+  margin: 0;
+}
+
+.city-information__content__card {
+  padding-right: 0;
+}
+
 .city-information__item {
   display: flex;
   flex-direction: row;
-  width: 100%;
   justify-content: space-between;
   font-size: 14px;
-  padding: 8px 0;
+  margin-top: 8px;
 }
 
-.city-information__content {
-  line-height: 24px;
+.city-information__item .line-1 {
+  font-weight: bold;
+}
+
+.city-information__item .line-2 {
+  color: #50656E;
+}
+
+.city-information__item > div:nth-child(1) {
+  width: 60%;
+}
+
+.city-information__item > div:nth-child(2) {
+  width: 50%;
+}
+
+.city-information__card h4 {
+  font-size: 1.25rem;
+  font-weight: normal;
+  padding-bottom: 1.375rem;
+}
+
+.city-information__content h4 {
+  font-size: 1.25rem;
+  font-weight: normal;
+  padding-bottom: 6px;
+}
+
+.city-information__main-attractions {
+  padding-top: 1.5rem;
 }

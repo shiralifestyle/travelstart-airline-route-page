@@ -27,9 +27,17 @@
       font-size: 14px;
       margin-top: 8px;
 
-      &-line-1 {
+      .line-1 {
         font-weight: bold;
       }
+    }
+
+    &__item > div:nth-child(1) {
+      width: 60%;
+    }
+
+    &__item > div:nth-child(2) {
+      width: 35%;
     }
   }
 
@@ -37,7 +45,7 @@
     border-radius: 2px;	
     background-color: $white;
     box-shadow: 0 0 2px 0 rgba(5,35,49,0.14), 0 2px 2px 0 rgba(5,35,49,0.12);
-    padding: 24px;
+    padding: 22px;
     margin-bottom: 0;
     width: $sidebar-width;
   }
