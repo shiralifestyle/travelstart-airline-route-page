@@ -117,7 +117,7 @@ aside {
 }
 
 .city-information-header h3 {
-  color: #FFFFFF;
+  color: white;
   transform: translatey(170px);
   font-size: 1.5rem;
   font-weight: bold;
@@ -135,10 +135,15 @@ aside {
   box-shadow: 0 0 2px 0 rgba(5, 35, 49, 0.14), 0 2px 2px 0 rgba(5, 35, 49, 0.12);
 }
 
+.city-information__card {
+  width: 334px;
+}
+
 .city-information__content {
-  width: calc(100% - 335px - 24px);
-  margin-left: 24px;
+  width: calc(100% - 334px - 24px);
   padding: 1.375rem;
+  width: 75%;
+  margin-left: 24px;
 }
 
 .city-information__content p {
@@ -147,17 +152,12 @@ aside {
   margin: 0;
 }
 
-.city-information__content__card {
-  padding-right: 0;
-  width: 335px;
-}
-
 .city-information__item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-size: 14px;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 .city-information__item .line-1 {
