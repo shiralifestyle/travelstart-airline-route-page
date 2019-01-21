@@ -225,3 +225,12 @@ aside {
   line-height: 24px;
   font-size: 1rem;
 }
+
+.activities-main {
+  background-color: #FAFBFB;
+}
+
+.activities-main__cards {
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,8 @@
+.activities-main {
+  background-color: $grey-nurse;
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+  }
+}
