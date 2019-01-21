@@ -228,9 +228,23 @@ aside {
 
 .activities-main {
   background-color: #FAFBFB;
+  padding: 48px 40px 64px 40px;
 }
 
 .activities-main__cards {
   display: flex;
   flex-direction: row;
+}
+
+.activities-main__item {
+  display: flex;
+  flex-direction: column;
+  width: calc(33.33% - (24px / 2));
+  height: 430px;
+}
+
+.activities-main__img {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
