@@ -4,20 +4,41 @@ $default-spacing: 24px;
   background-color: $grey-nurse;
   padding: 48px 40px 64px 40px;
 
+  h3 {
+    padding-bottom: 24px;
+  }
+
   &__cards {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   &__item {
     display: flex;
     flex-direction: column;
     width: calc(33.33% - (#{$default-spacing} / 2));
-    height: 430px;
+    background-color: $white;
+    box-shadow: 0 0 2px 0 rgba(5,35,49,0.14), 0 2px 2px 0 rgba(5,35,49,0.12);
+
+    p {
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    .card__text {
+      padding: 16px;
+
+      h4 {
+        font-size: 20px;
+        font-weight: normal;
+      }
+    }
   }
 
   &__img {
-    
+    height: 216px;
+    cursor: pointer;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

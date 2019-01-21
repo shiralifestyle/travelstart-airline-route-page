@@ -231,19 +231,41 @@ aside {
   padding: 48px 40px 64px 40px;
 }
 
+.activities-main h3 {
+  padding-bottom: 24px;
+}
+
 .activities-main__cards {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .activities-main__item {
   display: flex;
   flex-direction: column;
   width: calc(33.33% - (24px / 2));
-  height: 430px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 2px 0 rgba(5, 35, 49, 0.14), 0 2px 2px 0 rgba(5, 35, 49, 0.12);
+}
+
+.activities-main__item p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.activities-main__item .card__text {
+  padding: 16px;
+}
+
+.activities-main__item .card__text h4 {
+  font-size: 20px;
+  font-weight: normal;
 }
 
 .activities-main__img {
+  height: 216px;
+  cursor: pointer;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
