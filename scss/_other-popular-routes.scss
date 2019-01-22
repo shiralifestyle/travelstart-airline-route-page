@@ -1,3 +1,13 @@
 .popular-routes {
   background-color: $grey-nurse;
+
+  &__main {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  &__card {
+    display: flex;
+    flex-direction: row;
+  }
 }
