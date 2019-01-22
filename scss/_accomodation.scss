@@ -71,3 +71,27 @@ $default-spacing: 24px;
   }
 }
 
+.more-accomodation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 55px;
+
+  h4 {
+    padding-right: 16px;
+    font-size: 20px;
+    font-weight: normal;
+  }
+}
+
+.see-all-btn {
+  height: 40px;	
+  width: 106px;
+  border: 2px solid $dodger-blue;
+  border-radius: 2px;
+  text-align: center;
+  padding-top: 8px;
+  color: $dodger-blue;
+}
+
