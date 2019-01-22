@@ -15,16 +15,20 @@ html, body {
 }
 
 .fixed-container {
-  width: 100%;
+  width: 1000px;
   margin: 0 auto;
 }
 
-@media (min-width: 1280px) {
-  .fixed-container {
+/*
+  @media (min-width: 900px) {
+    max-width: 900px;
+  } */
+/* 
+  // 1280px
+  @media (min-width: 1280px) {
     max-width: 1000px;
-  }
-}
-
+  } 
+} */
 h2, h3, h4, h5 {
   color: #1E3945;
   margin: 0;
@@ -235,10 +239,24 @@ aside {
   padding-bottom: 24px;
 }
 
+@media (min-width: 1280px) {
+  .activities-main h3 {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
 .activities-main__cards {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+@media (min-width: 1280px) {
+  .activities-main__cards {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .activities-main__item {
@@ -278,10 +296,24 @@ aside {
   padding-bottom: 24px;
 }
 
+@media (min-width: 1280px) {
+  .accomodation-main h3 {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
 .accomodation-main__cards {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+@media (min-width: 1280px) {
+  .accomodation-main__cards {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .accomodation-main__item {
