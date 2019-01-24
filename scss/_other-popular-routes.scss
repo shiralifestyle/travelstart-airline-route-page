@@ -1,9 +1,11 @@
 .popular-routes {
   background-color: $grey-nurse;
+  padding: 48px 0 64px 0;
 
   &__main {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   &__card {
@@ -14,7 +16,7 @@
     box-shadow: 0 0 2px 0 rgba(5,35,49,0.14), 0 2px 2px 0 rgba(5,35,49,0.12);
     display: flex;
     flex-direction: row;
-    width: 385px;
+    width: 143px;
     height: 150px;
     margin-top: 0;
 
