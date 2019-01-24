@@ -330,6 +330,8 @@ aside {
 }
 
 .accomodation-main__img {
+  height: 50%;
+  max-width: auto;
   cursor: pointer;
   background-size: cover;
   background-position: center center;

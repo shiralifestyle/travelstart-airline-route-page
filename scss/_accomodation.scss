@@ -38,6 +38,8 @@ $default-spacing: 24px;
   }
 
   &__img {
+    height: 50%;
+    max-width: auto;
     cursor: pointer;
     background-size: cover;
     background-position: center center;
