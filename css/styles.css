@@ -270,9 +270,13 @@ aside {
 .activities-main__item p {
   font-size: 14px;
   line-height: 21px;
+  margin: 0;
+  padding: 8px 0 16px 0;
 }
 
-.activities-main__img {
+.activities-main__item img {
+  height: 216px;
+  width: auto;
   cursor: pointer;
   background-size: cover;
   background-position: center center;
@@ -326,12 +330,13 @@ aside {
 
 .accomodation-main__item p {
   font-size: 14px;
-  line-height: 21px;
+  margin: 0;
+  padding: 8px 0 16px 0;
 }
 
-.accomodation-main__img {
-  height: 50%;
-  max-width: auto;
+.accomodation-main__item img {
+  height: 216px;
+  width: auto;
   cursor: pointer;
   background-size: cover;
   background-position: center center;
@@ -339,7 +344,6 @@ aside {
 }
 
 .card__text {
-  padding: 16px;
   display: flex;
   flex-direction: column;
 }
@@ -379,11 +383,9 @@ aside {
 }
 
 .see-all-btn {
-  height: 40px;
-  width: 106px;
-  border: 2px solid #1BB3F5;
+  border: 1px solid #1BB3F5;
   border-radius: 2px;
-  text-align: center;
-  padding-top: 8px;
+  align-items: center;
   color: #1BB3F5;
+  padding: 10px 22px;
 }

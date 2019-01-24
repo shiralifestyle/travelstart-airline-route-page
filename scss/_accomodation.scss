@@ -33,22 +33,22 @@ $default-spacing: 24px;
 
     p {
       font-size: 14px;
-      line-height: 21px;
+      margin: 0;
+      padding: 8px 0 16px 0;
     }
   }
-
-  &__img {
-    height: 50%;
-    max-width: auto;
+}
+  
+.accomodation-main__item img {
+    height: 216px;
+    width: auto;
     cursor: pointer;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
   }
-}
 
 .card__text {
-  padding: 16px;
   display: flex;
   flex-direction: column;
 
@@ -88,12 +88,10 @@ $default-spacing: 24px;
 }
 
 .see-all-btn {
-  height: 40px;	
-  width: 106px;
-  border: 2px solid $dodger-blue;
+  border: 1px solid $dodger-blue;
   border-radius: 2px;
-  text-align: center;
-  padding-top: 8px;
+  align-items: center;
   color: $dodger-blue;
+  padding: 10px 22px;
 }
 

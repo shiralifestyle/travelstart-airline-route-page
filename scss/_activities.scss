@@ -24,8 +24,6 @@ $default-spacing: 24px;
     }
   }
 
-
-
   &__item {
     display: flex;
     flex-direction: column;
@@ -36,16 +34,20 @@ $default-spacing: 24px;
     p {
       font-size: 14px;
       line-height: 21px;
+      margin: 0;
+      padding: 8px 0 16px 0;
     }
   }
+}
 
-  &__img {
-    cursor: pointer;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    }
-  }
+.activities-main__item img {
+  height: 216px;
+  width: auto;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+} 
 
 .card__text {
   padding: 16px;
