@@ -41,7 +41,7 @@ p {
 }
 
 a {
-  color: #1BB3F5;
+  color: #1E3945;
   text-decoration: none;
 }
 
@@ -395,6 +395,10 @@ aside {
   padding: 48px 0 64px 0;
 }
 
+.popular-routes h3 {
+  padding-bottom: 32px;
+}
+
 .popular-routes__main {
   display: flex;
   flex-direction: row;
@@ -409,15 +413,38 @@ aside {
   box-shadow: 0 0 2px 0 rgba(5, 35, 49, 0.14), 0 2px 2px 0 rgba(5, 35, 49, 0.12);
   display: flex;
   flex-direction: row;
-  width: 143px;
-  height: 150px;
+  width: 315px;
+  height: 108px;
   margin-top: 0;
 }
 
-.popular-routes__card__img {
+.popular-routes__img {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   width: 33%;
   height: auto;
+}
+
+.popular-routes__text {
+  width: 67%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 22px;
+}
+
+.popular-routes-type {
+  color: #50656E;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 4px;
+}
+
+.popular-routes__route span {
+  color: #1E3945;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
 }
