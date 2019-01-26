@@ -37,16 +37,23 @@ $default-spacing: 24px;
       padding: 8px 0 16px 0;
     }
   }
-}
-  
-.accomodation-main__item img {
-    height: 216px;
-    width: auto;
-    cursor: pointer;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+
+  &__item:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 1px 18px 0 rgba(0, 0, 0, 0.3);
   }
+}
+
+.card__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+
+  h4 {
+    font-size: 19px;
+    font-weight: normal;
+  }
+}
 
 .card-btn {
   width: 106px;

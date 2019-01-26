@@ -47,12 +47,18 @@ a {
   color: $cutty-sark;
 }
 
+.card-img {
+  height: 216px;
+  width: auto;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 
 .card__text {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
   padding: 16px;
 
   h4 {
