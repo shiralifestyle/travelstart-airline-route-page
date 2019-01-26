@@ -47,6 +47,20 @@ a {
   color: $cutty-sark;
 }
 
+
+.card__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 16px;
+
+  h4 {
+    font-size: 19px;
+    font-weight: normal;
+  }
+}
+
 .card-btn {
   background-color: $dodger-blue;
   color: $white;
