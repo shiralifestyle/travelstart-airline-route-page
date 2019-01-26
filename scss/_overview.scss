@@ -4,22 +4,42 @@
   // 1280px
   .overview {
     background-color: $white;
-    margin-bottom: 56px;
+    margin-bottom: 30px;
 
+     // 1280px
+     @media (min-width: #{$screen-desktop-large}) {
+      background-color: $white;
+      margin-bottom: 56px;
+     }
+
+    // 320px
     &__main {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+
+      // 1280px
+      @media (min-width: #{$screen-desktop-large}) {
+        display: flex;
+        flex-direction: row;
+      }
     }
 
     &__content {
-      width: calc(100% - #{$sidebar-width} - #{$content-margin});
-      margin-right: 25px;
+      width: 100%;
+      padding: 16px;
 
       p {
         margin-top: 0;
         margin-bottom: 0;
       }
+
+      // 1280px
+      @media (min-width: #{$screen-desktop-large}) {
+        width: calc(100% - #{$sidebar-width} - #{$content-margin});
+        margin-right: 25px;
+      }
     }
+  
 
     &__item {
       display: flex;
@@ -47,8 +67,13 @@
     background-color: $white;
     box-shadow: 0 0 2px 0 rgba(5,35,49,0.14), 0 2px 2px 0 rgba(5,35,49,0.12);
     padding: 22px;
-    margin-bottom: 0;
+   margin: 0 auto;
     width: $sidebar-width;
+
+    // 1280px
+    @media (min-width: #{$screen-desktop-large}) {
+      width: $sidebar-width;
+    }
   }
 
   .airline-logo {

@@ -10,6 +10,14 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 1.625rem;
+
+    // 1280px
+    @media (min-width: #{$screen-desktop-large}) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 1.625rem;
+    }
   }
 
   &__item {

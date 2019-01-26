@@ -15,20 +15,16 @@ html, body {
 }
 
 .fixed-container {
-  width: 1000px;
-  margin: 0 auto;
+  width: 100%;
 }
 
-/*
-  @media (min-width: 900px) {
-    max-width: 900px;
-  } */
-/* 
-  // 1280px
-  @media (min-width: 1280px) {
-    max-width: 1000px;
-  } 
-} */
+@media (min-width: 1280px) {
+  .fixed-container {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
+
 h2, h3, h4, h5 {
   color: #1E3945;
   margin: 0;
@@ -81,22 +77,43 @@ a {
 
 .overview {
   background-color: #FFFFFF;
-  margin-bottom: 56px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1280px) {
+  .overview {
+    background-color: #FFFFFF;
+    margin-bottom: 56px;
+  }
 }
 
 .overview__main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+@media (min-width: 1280px) {
+  .overview__main {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .overview__content {
-  width: calc(100% - 280px - 24px);
-  margin-right: 25px;
+  width: 100%;
+  padding: 16px;
 }
 
 .overview__content p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+@media (min-width: 1280px) {
+  .overview__content {
+    width: calc(100% - 280px - 24px);
+    margin-right: 25px;
+  }
 }
 
 .overview__item {
@@ -124,8 +141,14 @@ aside {
   background-color: #FFFFFF;
   box-shadow: 0 0 2px 0 rgba(5, 35, 49, 0.14), 0 2px 2px 0 rgba(5, 35, 49, 0.12);
   padding: 22px;
-  margin-bottom: 0;
+  margin: 0 auto;
   width: 280px;
+}
+
+@media (min-width: 1280px) {
+  aside {
+    width: 280px;
+  }
 }
 
 .airline-logo {
@@ -136,21 +159,48 @@ aside {
 .city-information {
   background-image: url("../images/johannesburg_hero.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background-position: 50% -55%;
+  width: 100%;
+}
+
+@media (min-width: 1280px) {
+  .city-information {
+    background-image: url("../images/johannesburg_hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
 }
 
 .city-information-header h3 {
   color: white;
-  transform: translatey(170px);
+  transform: translatey(130px);
   font-size: 1.5rem;
   font-weight: bold;
+  margin-left: 20px;
+}
+
+@media (min-width: 1280px) {
+  .city-information-header h3 {
+    color: white;
+    transform: translatey(170px);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 }
 
 .city-information-container {
   display: flex;
-  flex-direction: row;
-  transform: translatey(70%);
+  flex-direction: column;
+  transform: translatey(25%);
+}
+
+@media (min-width: 1280px) {
+  .city-information-container {
+    display: flex;
+    flex-direction: row;
+    transform: translatey(70%);
+  }
 }
 
 .city-information__card, .city-information__content {
@@ -160,20 +210,36 @@ aside {
 }
 
 .city-information__card {
-  width: 334px;
+  width: 280px;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 1280px) {
+  .city-information__card {
+    width: 334px;
+  }
 }
 
 .city-information__content {
   width: calc(100% - 334px - 24px);
   padding: 1.375rem;
-  width: 75%;
-  margin-left: 24px;
+  width: 90%;
+  margin-left: 16px;
 }
 
 .city-information__content p {
   color: #50656E;
   font-size: 14px;
   margin: 0;
+}
+
+@media (min-width: 1280px) {
+  .city-information__content {
+    width: calc(100% - 334px - 24px);
+    padding: 1.375rem;
+    width: 75%;
+    margin-left: 24px;
+  }
 }
 
 .city-information__item {
@@ -228,6 +294,15 @@ aside {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 1.625rem;
+}
+
+@media (min-width: 1280px) {
+  .route__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1.625rem;
+  }
 }
 
 .route__item {

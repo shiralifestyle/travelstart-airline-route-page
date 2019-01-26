@@ -6,20 +6,44 @@ $content-margin: 24px;
 .city-information {
   background-image: url('../images/johannesburg_hero.jpg');
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background-position: 50% -55%;
+  width: 100%;
+  
+  // 1280px
+  @media (min-width: #{$screen-desktop-large}) {
+    background-image: url('../images/johannesburg_hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
 
   &-header h3 {
     color: white;
-    transform: translatey(170px);
+    transform: translatey(130px);
     font-size: 1.5rem;
     font-weight: bold;
+    margin-left: 20px;
+    
+    // 1280px
+    @media (min-width: #{$screen-desktop-large}) {
+      color: white;
+      transform: translatey(170px);
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
   }
 
   &-container {
     display: flex;
-    flex-direction: row;
-    transform: translatey(70%);
+    flex-direction: column;
+    transform: translatey(25%);
+
+    // 1280px
+    @media (min-width: #{$screen-desktop-large}) {
+      display: flex;
+      flex-direction: row;
+      transform: translatey(70%);
+    }
   }
 
   &__card, &__content {
@@ -29,19 +53,33 @@ $content-margin: 24px;
   }
 
   &__card {
-    width: 334px;
+    width: 280px;
+    margin-bottom: 8px;
+
+    // 1280px
+    @media (min-width: #{$screen-desktop-large}) {
+      width: 334px;
+    }
   }
 
   &__content {
     width: calc(100% - #{$info-width} - #{$content-margin}); 
     padding: 1.375rem;
-    width: 75%;
-    margin-left: 24px;
+    width: 90%;
+    margin-left: 16px;
 
     p {
       color: $cutty-sark;
       font-size: 14px;
       margin: 0;
+    }
+
+    // 1280px
+    @media (min-width: #{$screen-desktop-large}) {
+      width: calc(100% - #{$info-width} - #{$content-margin}); 
+      padding: 1.375rem;
+      width: 75%;
+      margin-left: 24px;
     }
   }
 
