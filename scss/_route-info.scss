@@ -3,18 +3,27 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 4rem;
-  margin-top: 250px;
+  margin-top: 230px;
+  margin-left: 22%;
+
+  // 1280px
+  @media (min-width: #{$screen-desktop-large}) { 
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 4rem;
+      margin-top: 250px;
+      margin-left: 0;
+  }
 
   &__main {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     margin-top: 1.625rem;
-
+    
     // 1280px
     @media (min-width: #{$screen-desktop-large}) {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: space-between;
       margin-top: 1.625rem;
     }
@@ -23,8 +32,18 @@
   &__item {
     display: flex;
     flex-direction: column;
-  }
+      
+    & + & {
+      margin-top: 16px;
 
+      // 1280px
+      @media (min-width: #{$screen-desktop-large}) { 
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+      }
+    }
+  }
   .icon img {
     margin-bottom: 10px;
     height: 20px;
@@ -39,6 +58,5 @@
     line-height: 24px;
     font-size: 1rem;
   }
-
 }
 

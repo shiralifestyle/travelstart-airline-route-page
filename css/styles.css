@@ -286,20 +286,30 @@ aside {
   display: flex;
   flex-direction: column;
   margin-bottom: 4rem;
-  margin-top: 250px;
+  margin-top: 230px;
+  margin-left: 22%;
+}
+
+@media (min-width: 1280px) {
+  .route {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    margin-top: 250px;
+    margin-left: 0;
+  }
 }
 
 .route__main {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   margin-top: 1.625rem;
 }
 
 @media (min-width: 1280px) {
   .route__main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     margin-top: 1.625rem;
   }
@@ -308,6 +318,18 @@ aside {
 .route__item {
   display: flex;
   flex-direction: column;
+}
+
+.route__item + .route__item {
+  margin-top: 16px;
+}
+
+@media (min-width: 1280px) {
+  .route__item + .route__item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
 }
 
 .route .icon img {
