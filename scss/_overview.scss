@@ -1,4 +1,4 @@
-  $sidebar-width: 280px;
+  $sidebar-width: 281px;
   $content-margin: 24px;
 
   // 1280px
@@ -30,16 +30,23 @@
 
       p {
         margin-top: 0;
-        margin-bottom: 0;
       }
 
       // 1280px
       @media (min-width: #{$screen-desktop-large}) {
         width: calc(100% - #{$sidebar-width} - #{$content-margin});
         margin-right: 25px;
+        padding-top: 0;
       }
     }
-  
+
+    &__content-last-item {
+
+      // 1280px
+      @media (min-width: #{$screen-desktop-large}) {
+        margin-bottom: 0;
+      }
+    }
 
     &__item {
       display: flex;
@@ -67,8 +74,9 @@
     background-color: $white;
     box-shadow: 0 0 2px 0 rgba(5,35,49,0.14), 0 2px 2px 0 rgba(5,35,49,0.12);
     padding: 22px;
-   margin: 0 auto;
+    margin: 0 auto;
     width: $sidebar-width;
+    height: 100%;
 
     // 1280px
     @media (min-width: #{$screen-desktop-large}) {
