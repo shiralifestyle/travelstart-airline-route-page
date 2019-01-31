@@ -401,7 +401,7 @@ aside {
 }
 
 .activities-main__item:hover {
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 1px 18px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 18px 0 rgba(0, 0, 0, 0.1);
 }
 
 .accomodation-main {
@@ -447,7 +447,7 @@ aside {
 }
 
 .accomodation-main__item:hover {
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 1px 18px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 18px 0 rgba(0, 0, 0, 0.1);
 }
 
 .card__text {
@@ -560,5 +560,5 @@ aside {
 }
 
 .popular-routes__card:hover {
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 1px 18px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 18px 0 rgba(0, 0, 0, 0.1);
 }
