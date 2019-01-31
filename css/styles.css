@@ -366,7 +366,7 @@ aside {
 
 @media (min-width: 1280px) {
   .activities-main h3 {
-    max-width: 1100px;
+    max-width: 1160px;
     margin: 0 auto;
   }
 }
@@ -379,7 +379,7 @@ aside {
 
 @media (min-width: 1280px) {
   .activities-main__cards {
-    max-width: 1100px;
+    max-width: 1160px;
     margin: 0 auto;
   }
 }
@@ -413,7 +413,7 @@ aside {
 
 @media (min-width: 1280px) {
   .accomodation-main h3 {
-    max-width: 1100px;
+    max-width: 1160px;
     margin: 0 auto;
   }
 }
@@ -426,7 +426,7 @@ aside {
 
 @media (min-width: 1280px) {
   .accomodation-main__cards {
-    max-width: 1100px;
+    max-width: 1160px;
     margin: 0 auto;
   }
 }
