@@ -127,7 +127,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   font-size: 14px;
-  margin-top: 8px;
+  margin-top: 9px;
 }
 
 .overview__item .line-1 {
@@ -226,6 +226,7 @@ aside {
   .city-information__card {
     width: 380px;
     margin-bottom: 0;
+    height: auto;
   }
 }
 
@@ -255,7 +256,7 @@ aside {
   flex-direction: row;
   justify-content: space-between;
   font-size: 14px;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .city-information__item .line-1 {
