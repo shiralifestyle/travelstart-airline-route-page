@@ -57,7 +57,7 @@ a {
 .card__text {
   display: flex;
   flex-direction: column;
-  padding: 8px;
+  padding: 10px;
 
   // 1280px
   @media (min-width: #{$screen-desktop-large}) {
