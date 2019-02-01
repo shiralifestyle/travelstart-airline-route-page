@@ -439,7 +439,7 @@ aside {
 }
 
 .activities-main__item + .activities-main__item {
-  margin-top: 16px;
+  margin-top: 10px;
 }
 
 @media (min-width: 1280px) {
@@ -517,7 +517,7 @@ aside {
 }
 
 .accomodation-main__item + .accomodation-main__item {
-  margin-top: 16px;
+  margin-top: 10px;
 }
 
 @media (min-width: 1280px) {
@@ -625,17 +625,37 @@ aside {
 
 .popular-routes {
   background-color: #FAFBFB;
-  padding: 48px 0 64px 0;
+  padding: 32px 16px 48px 16px;
+}
+
+@media (min-width: 1280px) {
+  .popular-routes {
+    padding: 48px 0 64px 0;
+  }
 }
 
 .popular-routes h3 {
-  padding-bottom: 32px;
+  padding-bottom: 16px;
+}
+
+@media (min-width: 1280px) {
+  .popular-routes h3 {
+    padding-bottom: 32px;
+  }
 }
 
 .popular-routes__main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+}
+
+@media (min-width: 1280px) {
+  .popular-routes__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .popular-routes__card {
@@ -646,9 +666,28 @@ aside {
   box-shadow: 0 0 2px 0 rgba(5, 35, 49, 0.14), 0 2px 2px 0 rgba(5, 35, 49, 0.12);
   display: flex;
   flex-direction: row;
-  width: 315px;
+  width: 100%;
   height: 108px;
   margin-top: 0;
+}
+
+.popular-routes__card + .popular-routes__card {
+  margin-top: 8px;
+}
+
+@media (min-width: 1280px) {
+  .popular-routes__card {
+    display: flex;
+    flex-direction: row;
+    border-radius: 2px;
+    background-color: white;
+    box-shadow: 0 0 2px 0 rgba(5, 35, 49, 0.14), 0 2px 2px 0 rgba(5, 35, 49, 0.12);
+    display: flex;
+    flex-direction: row;
+    width: 315px;
+    height: 108px;
+    margin-top: 0;
+  }
 }
 
 .popular-routes__img {
