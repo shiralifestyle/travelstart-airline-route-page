@@ -600,6 +600,7 @@ aside {
 @media (min-width: 1280px) {
   .more-accomodation h4 {
     padding-right: 16px;
+    padding-bottom: 0;
     font-size: 20px;
     font-weight: normal;
   }
@@ -673,6 +674,12 @@ aside {
 
 .popular-routes__card + .popular-routes__card {
   margin-top: 8px;
+}
+
+@media (min-width: 1280px) {
+  .popular-routes__card + .popular-routes__card {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 1280px) {

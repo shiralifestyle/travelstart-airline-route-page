@@ -43,6 +43,11 @@
 
     & + & {
       margin-top: 8px;
+
+      // 1280px
+      @media (min-width: #{$screen-desktop-large}) {
+        margin-top: 0;
+      }
     }
 
     // 1280px
