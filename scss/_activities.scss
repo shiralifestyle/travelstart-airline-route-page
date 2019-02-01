@@ -2,7 +2,7 @@ $default-spacing: 24px;
 
 .activities-main {
   background-color: $grey-nurse;
-  padding: 48px 40px 64px 40px;
+  padding: 48px 16px 64px 16px;
 
   h3 {
     padding-bottom: 24px;
@@ -11,6 +11,7 @@ $default-spacing: 24px;
     @media (min-width: #{$screen-desktop-large}) {
       max-width: 1160px;
       margin: 0 auto;
+      padding: 48px 40px 64px 40px;
     }
   }
 

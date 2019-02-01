@@ -18,7 +18,7 @@ $content-margin: 24px;
 
   &-header h3 {
     color: white;
-    transform: translatey(190px);
+    transform: translatey(210px);
     font-size: 1.5rem;
     font-weight: bold;
     margin-left: 16px;
@@ -68,7 +68,7 @@ $content-margin: 24px;
     width: calc(100% - #{$info-width} - #{$content-margin}); 
     padding: 1.375rem;
     width: 90%;
-    margin-left: 16px;
+    margin-left: 14px;
 
     // 1280px
     @media (min-width: #{$screen-desktop-large}) {
@@ -101,7 +101,12 @@ $content-margin: 24px;
   }
 
   &__item > div:nth-child(1) {
-    width: 40%;
+    width: 60%;
+
+    // 1280px
+    @media (min-width: #{$screen-desktop-large}) {
+      width: 40%;
+    }
   }
 
   &__item > div:nth-child(2) {
