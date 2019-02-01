@@ -7,6 +7,7 @@ $default-spacing: 24px;
   h3 {
     padding-bottom: 24px;
     
+    // 1280px
     @media (min-width: #{$screen-desktop-large}) {
       max-width: 1160px;
       margin: 0 auto;
@@ -15,32 +16,56 @@ $default-spacing: 24px;
 
   &__cards {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
 
+    // 1280px
     @media (min-width: #{$screen-desktop-large}) {
       max-width: 1160px;
       margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 
   &__item {
     display: flex;
     flex-direction: column;
-    width: calc(33.33% - (#{$default-spacing} / 2));
+    width: 100%;
     background-color: $white;
     box-shadow: 0 0 2px 0 rgba(5,35,49,0.14), 0 2px 2px 0 rgba(5,35,49,0.12);
+
+    & + & {
+      margin-top: 16px;
+
+      // 1280px
+      @media (min-width: #{$screen-desktop-large}) {
+        margin-top: 0;
+      }
+    }
+    
+    // 1280px
+    @media (min-width: #{$screen-desktop-large}) {
+      display: flex;
+      flex-direction: column;
+      width: calc(33.33% - (#{$default-spacing} / 2));
+      background-color: $white;
+      box-shadow: 0 0 2px 0 rgba(5,35,49,0.14), 0 2px 2px 0 rgba(5,35,49,0.12);
+    }
 
     p {
       font-size: 14px;
       line-height: 21px;
       margin: 0;
-      padding: 8px 0 16px 0;
+      padding: 0;
     }
-  }
-  
+  }     
+ 
   &__item:hover {
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 18px 0 rgba(0, 0, 0, 0.1);
+    // 1280px
+    @media (min-width: #{$screen-desktop-large}) {
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 18px 0 rgba(0, 0, 0, 0.1);
+    }
   }
 }
 

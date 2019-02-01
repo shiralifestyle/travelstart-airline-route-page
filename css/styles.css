@@ -386,34 +386,58 @@ aside {
 
 .activities-main__cards {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 @media (min-width: 1280px) {
   .activities-main__cards {
     max-width: 1160px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
 .activities-main__item {
   display: flex;
   flex-direction: column;
-  width: calc(33.33% - (24px / 2));
+  width: 100%;
   background-color: #FFFFFF;
   box-shadow: 0 0 2px 0 rgba(5, 35, 49, 0.14), 0 2px 2px 0 rgba(5, 35, 49, 0.12);
+}
+
+.activities-main__item + .activities-main__item {
+  margin-top: 16px;
+}
+
+@media (min-width: 1280px) {
+  .activities-main__item + .activities-main__item {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .activities-main__item {
+    display: flex;
+    flex-direction: column;
+    width: calc(33.33% - (24px / 2));
+    background-color: #FFFFFF;
+    box-shadow: 0 0 2px 0 rgba(5, 35, 49, 0.14), 0 2px 2px 0 rgba(5, 35, 49, 0.12);
+  }
 }
 
 .activities-main__item p {
   font-size: 14px;
   line-height: 21px;
   margin: 0;
-  padding: 8px 0 16px 0;
+  padding: 0;
 }
 
-.activities-main__item:hover {
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 18px 0 rgba(0, 0, 0, 0.1);
+@media (min-width: 1280px) {
+  .activities-main__item:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 18px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .accomodation-main {
