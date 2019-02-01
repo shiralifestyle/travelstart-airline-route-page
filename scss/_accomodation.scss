@@ -99,15 +99,32 @@ $default-spacing: 24px;
 
 .more-accomodation {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-bottom: 55px;
 
+  // 1280px
+  @media (min-width: #{$screen-desktop-large}) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 55px;
+  }
+
   h4 {
-    padding-right: 16px;
-    font-size: 20px;
+    text-align: center;
+    padding: 0 0 10px 0;
+    font-size: 18px;
     font-weight: normal;
+
+    // 1280px
+    @media (min-width: #{$screen-desktop-large}) {
+      padding-right: 16px;
+      font-size: 20px;
+      font-weight: normal;
+    }
   }
 }
 
@@ -116,6 +133,15 @@ $default-spacing: 24px;
   border-radius: 2px;
   align-items: center;
   color: $dodger-blue;
-  padding: 10px 22px;
+  padding: 8px 18px;
+
+  // 1280px
+  @media (min-width: #{$screen-desktop-large}) {
+    border: 1px solid $dodger-blue;
+    border-radius: 2px;
+    align-items: center;
+    color: $dodger-blue;
+    padding: 10px 22px;
+  }
 }
 
