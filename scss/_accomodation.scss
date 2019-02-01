@@ -2,34 +2,60 @@ $default-spacing: 24px;
 
 
 .accomodation-main {
-  padding: 56px 40px 55px 40px;
+  padding: 32px 16px 48px 16px;
+
+  // 1280px
+  @media (min-width: #{$screen-desktop-large}) {
+    padding: 56px 40px 55px 40px;
+  }
 
   h3 {
-    padding-bottom: 24px;
-
+    padding-bottom: 16px;
+    
+    // 1280px
     @media (min-width: #{$screen-desktop-large}) {
       max-width: 1160px;
       margin: 0 auto;
+      padding-bottom: 24px;
     }
   }
 
   &__cards {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
 
+    // 1280px
     @media (min-width: #{$screen-desktop-large}) {
       max-width: 1160px;
       margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 
   &__item {
     display: flex;
     flex-direction: column;
-    width: calc(33.33% - (#{$default-spacing} / 2));
+    width: 100%;
     background-color: $white;
     box-shadow: 0 0 2px 0 rgba(5,35,49,0.14), 0 2px 2px 0 rgba(5,35,49,0.12);
+
+    & + & {
+      margin-top: 16px;
+
+      // 1280px
+      @media (min-width: #{$screen-desktop-large}) {
+        margin-top: 0;
+      }
+    }
+
+    // 1280px
+    @media (min-width: #{$screen-desktop-large}) {
+      display: flex;
+      flex-direction: column;
+      width: calc(33.33% - (#{$default-spacing} / 2));
+    }
 
     p {
       font-size: 14px;
