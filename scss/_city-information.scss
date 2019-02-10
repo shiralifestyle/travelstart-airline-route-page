@@ -7,6 +7,11 @@ $content-margin: 24px;
   background-repeat: no-repeat;
   background-position: 50% -55%;
   width: 100%;
+
+  /*// 680px
+  @media (min-width: #{$screen-mobile-xlrg}) {
+    background-position: 50% -20%;
+  } */
   
   // 1280px
   @media (min-width: #{$screen-desktop-large}) {
@@ -18,7 +23,7 @@ $content-margin: 24px;
 
   &-header h3 {
     color: white;
-    transform: translatey(130px);
+    transform: translatey(180px);
     font-size: 1.5rem;
     font-weight: bold;
     margin-left: 16px;
@@ -26,17 +31,23 @@ $content-margin: 24px;
     // 360px
     @media (min-width: #{$screen-mobile-small-medium}) {
       margin-left: 20px;
-      transform: translatey(170px);
+      transform: translatey(190px);
     }
 
     // 375px
     @media (min-width: #{$screen-mobile-small-large}) {
-      transform: translatey(160px);
+      transform: translatey(190px);
     }
 
     // 414px
     @media (min-width: #{$screen-mobile-medium}) {
-      transform: translatey(150px);
+      transform: translatey(210px);
+    }
+
+    // 480px
+    @media (min-width: #{$screen-mobile-large}) {
+      transform: translatey(210px);
+      margin-left: 25px;
     }
     
     // 1280px
@@ -52,11 +63,26 @@ $content-margin: 24px;
   &-container {
     display: flex;
     flex-direction: column;
-    transform: translatey(20%);
+    transform: translatey(30%);
 
     // 360px
     @media (min-width: #{$screen-mobile-small-medium}) {
-      transform: translatey(25%);
+      transform: translatey(30%);
+    }
+
+    // 375px
+    @media (min-width: #{$screen-mobile-small-large}) {
+      transform: translatey(32%);
+    }
+
+    // 414px
+    @media (min-width: #{$screen-mobile-medium}) {
+      transform: translatey(38%);
+    } 
+
+    // 480px
+    @media (min-width: #{$screen-mobile-large}) {
+      transform: translatey(38%);
     }
 
     // 1280px
@@ -82,7 +108,7 @@ $content-margin: 24px;
     @media (min-width: #{$screen-mobile-small-medium}) {
       width: 90%;
     }
-    
+ 
     // 1280px
     @media (min-width: #{$screen-desktop-large}) {
       width: 380px;
@@ -104,11 +130,16 @@ $content-margin: 24px;
       padding: 22px;
     }
 
+    // 680px
+    @media (min-width: #{$screen-mobile-xlrg}) {
+      width: calc(100% - #{$info-width} - #{$content-margin}); 
+    }
+
     // 1280px
     @media (min-width: #{$screen-desktop-large}) {
       width: calc(100% - #{$info-width} - #{$content-margin}); 
       padding: 22px;
-      width: 60%;
+      //width: 60%;
       margin-left: 14px;
     }
 

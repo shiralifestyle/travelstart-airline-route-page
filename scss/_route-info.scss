@@ -3,21 +3,26 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
-  margin-top: 180px;
+  margin-top: 250px;
 
   // 360px
   @media (min-width: #{$screen-mobile-small-medium}) {
-    margin-top: 210px;
+    margin-top: 260px;
   }
 
   // 375px
   @media (min-width: #{$screen-mobile-small-large}) {
-    margin-top: 210px;
+    margin-top: 265px;
   }
 
   // 414px
   @media (min-width: #{$screen-mobile-medium}) {
-    margin-top: 210px;
+    margin-top: 290px;
+  }
+
+  // 480px
+  @media (min-width: #{$screen-mobile-large}) {
+    margin-top: 280px;
   }
 
   // 1280px

@@ -17,6 +17,12 @@
       display: flex;
       flex-direction: column;
 
+      // 680px
+      @media (min-width: #{$screen-mobile-xlrg}) {
+        display: flex;
+        flex-direction: row;
+      }
+
       // 1280px
       @media (min-width: #{$screen-desktop-large}) {
         display: flex;
@@ -77,6 +83,11 @@
     margin: 0 auto;
     width: $sidebar-width;
     height: 100%;
+
+    // 480px
+    @media (min-width: #{$screen-mobile-large}) {
+      width: 80%;
+    }
 
     // 1280px
     @media (min-width: #{$screen-desktop-large}) {
