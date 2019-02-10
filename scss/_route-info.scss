@@ -3,7 +3,22 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
-  margin-top: 200px;
+  margin-top: 180px;
+
+  // 360px
+  @media (min-width: #{$screen-mobile-small-medium}) {
+    margin-top: 210px;
+  }
+
+  // 375px
+  @media (min-width: #{$screen-mobile-small-large}) {
+    margin-top: 210px;
+  }
+
+  // 414px
+  @media (min-width: #{$screen-mobile-medium}) {
+    margin-top: 210px;
+  }
 
   // 1280px
   @media (min-width: #{$screen-desktop-large}) { 

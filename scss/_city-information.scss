@@ -18,10 +18,26 @@ $content-margin: 24px;
 
   &-header h3 {
     color: white;
-    transform: translatey(135px);
+    transform: translatey(130px);
     font-size: 1.5rem;
     font-weight: bold;
     margin-left: 16px;
+
+    // 360px
+    @media (min-width: #{$screen-mobile-small-medium}) {
+      margin-left: 20px;
+      transform: translatey(170px);
+    }
+
+    // 375px
+    @media (min-width: #{$screen-mobile-small-large}) {
+      transform: translatey(160px);
+    }
+
+    // 414px
+    @media (min-width: #{$screen-mobile-medium}) {
+      transform: translatey(150px);
+    }
     
     // 1280px
     @media (min-width: #{$screen-desktop-large}) {
@@ -38,6 +54,11 @@ $content-margin: 24px;
     flex-direction: column;
     transform: translatey(20%);
 
+    // 360px
+    @media (min-width: #{$screen-mobile-small-medium}) {
+      transform: translatey(25%);
+    }
+
     // 1280px
     @media (min-width: #{$screen-desktop-large}) {
       display: flex;
@@ -53,14 +74,21 @@ $content-margin: 24px;
   }
 
   &__card {
-    width: 280px;
+    width: 90%;
     margin-bottom: 8px;
+    padding: 15px;
 
+    // 360px
+    @media (min-width: #{$screen-mobile-small-medium}) {
+      width: 90%;
+    }
+    
     // 1280px
     @media (min-width: #{$screen-desktop-large}) {
       width: 380px;
       margin-bottom: 0;
       height: auto;
+      padding: 22px;
     }
   }
 
@@ -70,10 +98,16 @@ $content-margin: 24px;
     width: 90%;
     margin: 0 auto;
 
+    // 360px
+    @media (min-width: #{$screen-mobile-small-medium}) {
+      width: 90%;
+      padding: 22px;
+    }
+
     // 1280px
     @media (min-width: #{$screen-desktop-large}) {
       width: calc(100% - #{$info-width} - #{$content-margin}); 
-      padding: 1.375rem;
+      padding: 22px;
       width: 60%;
       margin-left: 14px;
     }
