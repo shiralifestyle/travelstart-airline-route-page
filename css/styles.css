@@ -18,6 +18,13 @@ html, body {
   width: 100%;
 }
 
+@media (min-width: 1000px) {
+  .fixed-container {
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
 @media (min-width: 1280px) {
   .fixed-container {
     width: 1000px;
@@ -195,6 +202,12 @@ aside {
   }
 }
 
+@media (min-width: 1000px) {
+  aside {
+    width: 281px;
+  }
+}
+
 @media (min-width: 1280px) {
   aside {
     width: 281px;
@@ -216,6 +229,14 @@ aside {
 @media (min-width: 678px) {
   .city-information {
     background-position: 50% -50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .city-information {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
   }
 }
 
@@ -268,6 +289,13 @@ aside {
   }
 }
 
+@media (min-width: 1000px) {
+  .city-information-header h3 {
+    transform: translatey(210px);
+    margin-left: 0;
+  }
+}
+
 @media (min-width: 1280px) {
   .city-information-header h3 {
     color: white;
@@ -314,6 +342,14 @@ aside {
   }
 }
 
+@media (min-width: 1000px) {
+  .city-information-container {
+    display: flex;
+    flex-direction: row;
+    transform: translatey(70%);
+  }
+}
+
 @media (min-width: 1280px) {
   .city-information-container {
     display: flex;
@@ -348,10 +384,16 @@ aside {
   }
 }
 
+@media (min-width: 1000px) {
+  .city-information__card {
+    margin: 0;
+  }
+}
+
 @media (min-width: 1280px) {
   .city-information__card {
     width: 380px;
-    margin-bottom: 0;
+    margin: 0;
     height: auto;
     padding: 22px;
   }
@@ -480,6 +522,12 @@ aside {
   }
 }
 
+@media (min-width: 1000px) {
+  .route {
+    margin-top: 260px;
+  }
+}
+
 @media (min-width: 1280px) {
   .route {
     display: flex;
@@ -494,6 +542,12 @@ aside {
   text-align: center;
 }
 
+@media (min-width: 1000px) {
+  .route__header {
+    text-align: left;
+  }
+}
+
 @media (min-width: 1280px) {
   .route__header {
     text-align: left;
@@ -505,6 +559,14 @@ aside {
   display: flex;
   flex-direction: column;
   margin-top: 1.625rem;
+}
+
+@media (min-width: 1000px) {
+  .route__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -526,11 +588,23 @@ aside {
   margin-top: 16px;
 }
 
+@media (min-width: 1000px) {
+  .route__item + .route__item {
+    margin-top: 0;
+  }
+}
+
 @media (min-width: 1280px) {
   .route__item + .route__item {
     display: flex;
     flex-direction: column;
     margin-top: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .route__item {
+    align-items: flex-start;
   }
 }
 
@@ -576,6 +650,12 @@ aside {
   }
 }
 
+@media (min-width: 1000px) {
+  .activities-main h3 {
+    text-align: left;
+  }
+}
+
 @media (min-width: 1280px) {
   .activities-main h3 {
     max-width: 1160px;
@@ -593,6 +673,16 @@ aside {
   .activities-main__cards {
     max-width: 450px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .activities-main__cards {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -618,9 +708,21 @@ aside {
   margin-top: 10px;
 }
 
+@media (min-width: 1000px) {
+  .activities-main__item + .activities-main__item {
+    margin-top: 0;
+  }
+}
+
 @media (min-width: 1280px) {
   .activities-main__item + .activities-main__item {
     margin-top: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .activities-main__item {
+    width: calc(33.33% - (24px / 2));
   }
 }
 
@@ -667,6 +769,12 @@ aside {
   }
 }
 
+@media (min-width: 1000px) {
+  .accomodation-main h3 {
+    text-align: left;
+  }
+}
+
 @media (min-width: 1280px) {
   .accomodation-main h3 {
     max-width: 1160px;
@@ -684,6 +792,16 @@ aside {
   .accomodation-main__cards {
     max-width: 450px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .accomodation-main__cards {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -709,9 +827,21 @@ aside {
   margin-top: 10px;
 }
 
+@media (min-width: 1000px) {
+  .accomodation-main__item + .accomodation-main__item {
+    margin-top: 0;
+  }
+}
+
 @media (min-width: 1280px) {
   .accomodation-main__item + .accomodation-main__item {
     margin-top: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .accomodation-main__item {
+    width: calc(33.33% - (24px / 2));
   }
 }
 
@@ -771,6 +901,16 @@ aside {
   padding-bottom: 55px;
 }
 
+@media (min-width: 1000px) {
+  .more-accomodation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 55px;
+  }
+}
+
 @media (min-width: 1280px) {
   .more-accomodation {
     display: flex;
@@ -794,6 +934,13 @@ aside {
   }
 }
 
+@media (min-width: 1000px) {
+  .more-accomodation h4 {
+    padding-bottom: 0;
+    padding-right: 16px;
+  }
+}
+
 @media (min-width: 1280px) {
   .more-accomodation h4 {
     padding-right: 16px;
@@ -811,6 +958,12 @@ aside {
   padding: 8px 18px;
 }
 
+@media (min-width: 1000px) {
+  .see-all-btn {
+    padding: 10px 22px;
+  }
+}
+
 @media (min-width: 1280px) {
   .see-all-btn {
     border: 1px solid #1BB3F5;
@@ -824,6 +977,18 @@ aside {
 .popular-routes {
   background-color: #FAFBFB;
   padding: 32px 16px 48px 16px;
+}
+
+@media (min-width: 678px) {
+  .popular-routes {
+    padding: 32px 32px 48px 32px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .popular-routes {
+    padding: 48px 0 64px 0;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -848,6 +1013,14 @@ aside {
   justify-content: space-between;
 }
 
+@media (min-width: 1000px) {
+  .popular-routes__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 @media (min-width: 1280px) {
   .popular-routes__main {
     display: flex;
@@ -869,13 +1042,16 @@ aside {
   margin-top: 0;
 }
 
-.popular-routes__card + .popular-routes__card {
-  margin-top: 8px;
+@media (min-width: 678px) {
+  .popular-routes__card {
+    width: 80%;
+  }
 }
 
-@media (min-width: 1280px) {
-  .popular-routes__card + .popular-routes__card {
-    margin-top: 0;
+@media (min-width: 1000px) {
+  .popular-routes__card {
+    width: 300px;
+    height: 108px;
   }
 }
 
@@ -890,6 +1066,22 @@ aside {
     flex-direction: row;
     width: 315px;
     height: 108px;
+    margin-top: 0;
+  }
+}
+
+.popular-routes__card + .popular-routes__card {
+  margin-top: 8px;
+}
+
+@media (min-width: 1000px) {
+  .popular-routes__card + .popular-routes__card {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .popular-routes__card + .popular-routes__card {
     margin-top: 0;
   }
 }

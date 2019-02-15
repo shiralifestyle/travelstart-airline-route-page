@@ -17,6 +17,11 @@ $default-spacing: 24px;
       text-align: center;
     }
 
+    // 1000px
+    @media (min-width: #{$screen-tablet-large}) {
+      text-align: left;
+    }
+
     // 1280px
     @media (min-width: #{$screen-desktop-large}) {
       max-width: 1160px;
@@ -33,6 +38,15 @@ $default-spacing: 24px;
     @media (min-width: #{$screen-mobile-xlrg}) {
       max-width: 450px;
       margin: 0 auto;
+    }
+
+    // 1000px
+    @media (min-width: #{$screen-tablet-large}) {
+      max-width: 1160px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
 
     // 1280px
@@ -55,10 +69,20 @@ $default-spacing: 24px;
     & + & {
       margin-top: 10px;
 
+      // 1000px
+      @media (min-width: #{$screen-tablet-large}) {
+        margin-top: 0;
+      }
+
       // 1280px
       @media (min-width: #{$screen-desktop-large}) {
         margin-top: 0;
       }
+    }
+
+    // 1000px
+    @media (min-width: #{$screen-tablet-large}) {
+      width: calc(33.33% - (#{$default-spacing} / 2));
     }
 
     // 1280px
@@ -119,6 +143,15 @@ $default-spacing: 24px;
   align-items: center;
   padding-bottom: 55px;
 
+  // 1000px
+  @media (min-width: #{$screen-tablet-large}) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 55px;
+  }
+
   // 1280px
   @media (min-width: #{$screen-desktop-large}) {
     display: flex;
@@ -139,6 +172,12 @@ $default-spacing: 24px;
       padding: 0 4px 10px 4px;
     }
 
+    // 1000px
+    @media (min-width: #{$screen-tablet-large}) {
+      padding-bottom: 0;
+      padding-right: 16px;
+    }
+
     // 1280px
     @media (min-width: #{$screen-desktop-large}) {
       padding-right: 16px;
@@ -155,6 +194,11 @@ $default-spacing: 24px;
   align-items: center;
   color: $dodger-blue;
   padding: 8px 18px;
+
+  // 1000px
+  @media (min-width: #{$screen-tablet-large}) {
+    padding: 10px 22px;
+  }
 
   // 1280px
   @media (min-width: #{$screen-desktop-large}) {

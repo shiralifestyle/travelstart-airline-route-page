@@ -104,6 +104,11 @@
       margin-right: 24px;
     }
 
+    // 1000px
+    @media (min-width: #{$screen-tablet-large}) {
+      width: $sidebar-width;
+    }
+
     // 1280px
     @media (min-width: #{$screen-desktop-large}) {
       width: $sidebar-width;

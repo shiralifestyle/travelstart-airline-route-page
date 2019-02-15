@@ -30,6 +30,11 @@
     margin-top: 310px;
   }
 
+  // 1000px
+  @media (min-width: #{$screen-tablet-large}) {
+    margin-top: 260px;
+  }
+
   // 1280px
   @media (min-width: #{$screen-desktop-large}) { 
       display: flex;
@@ -41,7 +46,12 @@
 
   &__header {
     text-align: center;
-    
+
+  // 1000px
+  @media (min-width: #{$screen-tablet-large}) {
+    text-align: left;
+  }
+
     // 1280px
     @media (min-width: #{$screen-desktop-large}) {
       text-align: left;
@@ -53,6 +63,13 @@
     display: flex;
     flex-direction: column;
     margin-top: 1.625rem;
+
+    // 1000px
+    @media (min-width: #{$screen-tablet-large}) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
     
     // 1280px
     @media (min-width: #{$screen-desktop-large}) {
@@ -71,12 +88,22 @@
     & + & {
       margin-top: 16px;
 
+      // 1000px
+      @media (min-width: #{$screen-tablet-large}) {
+        margin-top: 0;
+      }
+
       // 1280px
       @media (min-width: #{$screen-desktop-large}) { 
         display: flex;
         flex-direction: column;
         margin-top: 0;
       }
+    }
+
+    // 1000px
+    @media (min-width: #{$screen-tablet-large}) {
+      align-items: flex-start;
     }
 
     // 1280px

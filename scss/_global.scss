@@ -12,6 +12,12 @@ html, body {
 .fixed-container {
   width: 100%;
 
+  // 1000px
+  @media (min-width: #{$screen-tablet-large}) {
+    width: 940px;
+    margin: 0 auto;
+  }
+
   // 1280px
   @media (min-width: #{$screen-desktop-large}) {
     width: 1000px;
