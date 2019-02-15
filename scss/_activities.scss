@@ -12,6 +12,11 @@ $default-spacing: 24px;
   h3 {
     padding-bottom: 16px;
 
+    // 678px
+    @media (min-width: #{$screen-mobile-xlrg}) {
+      text-align: center;
+    }
+
     // 1280px
     @media (min-width: #{$screen-desktop-large}) {
       max-width: 1160px;
@@ -23,6 +28,12 @@ $default-spacing: 24px;
   &__cards {
     display: flex;
     flex-direction: column;
+
+    // 678px
+    @media (min-width: #{$screen-mobile-xlrg}) {
+      max-width: 450px;
+      margin: 0 auto;
+    }
 
     // 1280px
     @media (min-width: #{$screen-desktop-large}) {

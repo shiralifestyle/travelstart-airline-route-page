@@ -570,6 +570,12 @@ aside {
   padding-bottom: 16px;
 }
 
+@media (min-width: 678px) {
+  .activities-main h3 {
+    text-align: center;
+  }
+}
+
 @media (min-width: 1280px) {
   .activities-main h3 {
     max-width: 1160px;
@@ -581,6 +587,13 @@ aside {
 .activities-main__cards {
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: 678px) {
+  .activities-main__cards {
+    max-width: 450px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -648,6 +661,12 @@ aside {
   padding-bottom: 16px;
 }
 
+@media (min-width: 678px) {
+  .accomodation-main h3 {
+    text-align: center;
+  }
+}
+
 @media (min-width: 1280px) {
   .accomodation-main h3 {
     max-width: 1160px;
@@ -659,6 +678,13 @@ aside {
 .accomodation-main__cards {
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: 678px) {
+  .accomodation-main__cards {
+    max-width: 450px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 1280px) {
