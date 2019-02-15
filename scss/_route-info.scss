@@ -25,6 +25,11 @@
     margin-top: 280px;
   }
 
+  // 678px
+  @media (min-width: #{$screen-mobile-xlrg}) {
+    margin-top: 310px;
+  }
+
   // 1280px
   @media (min-width: #{$screen-desktop-large}) { 
       display: flex;
@@ -72,6 +77,11 @@
         flex-direction: column;
         margin-top: 0;
       }
+    }
+
+    // 1280px
+    @media (min-width: #{$screen-desktop-large}) { 
+      align-items: flex-start;
     }
   }
 

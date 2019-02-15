@@ -8,10 +8,10 @@ $content-margin: 24px;
   background-position: 50% -55%;
   width: 100%;
 
-  /*// 680px
+  // 678px
   @media (min-width: #{$screen-mobile-xlrg}) {
-    background-position: 50% -20%;
-  } */
+    background-position: 50% -50%;
+  }
   
   // 1280px
   @media (min-width: #{$screen-desktop-large}) {
@@ -49,6 +49,11 @@ $content-margin: 24px;
       transform: translatey(210px);
       margin-left: 25px;
     }
+
+    // 678px
+    @media (min-width: #{$screen-mobile-xlrg}) {
+      transform: translatey(240px);
+    }
     
     // 1280px
     @media (min-width: #{$screen-desktop-large}) {
@@ -85,6 +90,11 @@ $content-margin: 24px;
       transform: translatey(38%);
     }
 
+    // 678px
+    @media (min-width: #{$screen-mobile-xlrg}) {
+      transform: translatey(50%);
+    }
+
     // 1280px
     @media (min-width: #{$screen-desktop-large}) {
       display: flex;
@@ -108,6 +118,13 @@ $content-margin: 24px;
     @media (min-width: #{$screen-mobile-small-medium}) {
       width: 90%;
     }
+
+    // 678px
+    @media (min-width: #{$screen-mobile-xlrg}) {
+      margin-left: 24px;
+      margin-bottom: 16px;
+      width: 60%;
+    } 
  
     // 1280px
     @media (min-width: #{$screen-desktop-large}) {
@@ -130,16 +147,15 @@ $content-margin: 24px;
       padding: 22px;
     }
 
-    // 680px
+    // 678px
     @media (min-width: #{$screen-mobile-xlrg}) {
-      width: calc(100% - #{$info-width} - #{$content-margin}); 
+      margin: 0 0 0 24px;
     }
 
     // 1280px
     @media (min-width: #{$screen-desktop-large}) {
       width: calc(100% - #{$info-width} - #{$content-margin}); 
       padding: 22px;
-      //width: 60%;
       margin-left: 14px;
     }
 

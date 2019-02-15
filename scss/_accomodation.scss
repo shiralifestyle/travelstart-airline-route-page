@@ -123,6 +123,11 @@ $default-spacing: 24px;
     font-size: 18px;
     font-weight: normal;
 
+    // 414px
+    @media (min-width: #{$screen-mobile-medium}) {
+      padding: 0 4px 10px 4px;
+    }
+
     // 1280px
     @media (min-width: #{$screen-desktop-large}) {
       padding-right: 16px;

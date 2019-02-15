@@ -92,6 +92,12 @@ a {
   margin-bottom: 30px;
 }
 
+@media (min-width: 678px) {
+  .overview {
+    margin-bottom: 0;
+  }
+}
+
 @media (min-width: 1280px) {
   .overview {
     background-color: #FFFFFF;
@@ -104,7 +110,7 @@ a {
   flex-direction: column;
 }
 
-@media (min-width: 680px) {
+@media (min-width: 678px) {
   .overview__main {
     display: flex;
     flex-direction: row;
@@ -123,6 +129,12 @@ a {
   padding: 16px;
 }
 
+@media (min-width: 678px) {
+  .overview__content {
+    padding-left: 24px;
+  }
+}
+
 .overview__content p {
   margin-top: 0;
 }
@@ -130,7 +142,7 @@ a {
 @media (min-width: 1280px) {
   .overview__content {
     width: calc(100% - 281px - 24px);
-    margin-right: 25px;
+    margin-right: 24px;
     padding-top: 0;
   }
 }
@@ -177,6 +189,12 @@ aside {
   }
 }
 
+@media (min-width: 678px) {
+  aside {
+    margin-right: 24px;
+  }
+}
+
 @media (min-width: 1280px) {
   aside {
     width: 281px;
@@ -193,10 +211,12 @@ aside {
   background-repeat: no-repeat;
   background-position: 50% -55%;
   width: 100%;
-  /*// 680px
-  @media (min-width: 680px) {
-    background-position: 50% -20%;
-  } */
+}
+
+@media (min-width: 678px) {
+  .city-information {
+    background-position: 50% -50%;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -242,6 +262,12 @@ aside {
   }
 }
 
+@media (min-width: 678px) {
+  .city-information-header h3 {
+    transform: translatey(240px);
+  }
+}
+
 @media (min-width: 1280px) {
   .city-information-header h3 {
     color: white;
@@ -282,6 +308,12 @@ aside {
   }
 }
 
+@media (min-width: 678px) {
+  .city-information-container {
+    transform: translatey(50%);
+  }
+}
+
 @media (min-width: 1280px) {
   .city-information-container {
     display: flex;
@@ -308,6 +340,14 @@ aside {
   }
 }
 
+@media (min-width: 678px) {
+  .city-information__card {
+    margin-left: 24px;
+    margin-bottom: 16px;
+    width: 60%;
+  }
+}
+
 @media (min-width: 1280px) {
   .city-information__card {
     width: 380px;
@@ -331,9 +371,9 @@ aside {
   }
 }
 
-@media (min-width: 680px) {
+@media (min-width: 678px) {
   .city-information__content {
-    width: calc(100% - 380px - 24px);
+    margin: 0 0 0 24px;
   }
 }
 
@@ -434,6 +474,12 @@ aside {
   }
 }
 
+@media (min-width: 678px) {
+  .route {
+    margin-top: 310px;
+  }
+}
+
 @media (min-width: 1280px) {
   .route {
     display: flex;
@@ -485,6 +531,12 @@ aside {
     display: flex;
     flex-direction: column;
     margin-top: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .route__item {
+    align-items: flex-start;
   }
 }
 
@@ -708,6 +760,12 @@ aside {
   padding: 0 0 10px 0;
   font-size: 18px;
   font-weight: normal;
+}
+
+@media (min-width: 414px) {
+  .more-accomodation h4 {
+    padding: 0 4px 10px 4px;
+  }
 }
 
 @media (min-width: 1280px) {

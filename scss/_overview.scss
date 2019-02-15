@@ -1,10 +1,15 @@
   $sidebar-width: 281px;
   $content-margin: 24px;
 
-  // 1280px
+  // 320px
   .overview {
     background-color: $white;
     margin-bottom: 30px;
+
+    // 678px
+    @media (min-width: #{$screen-mobile-xlrg}) {
+      margin-bottom: 0;
+    }
 
      // 1280px
      @media (min-width: #{$screen-desktop-large}) {
@@ -17,7 +22,7 @@
       display: flex;
       flex-direction: column;
 
-      // 680px
+      // 678px
       @media (min-width: #{$screen-mobile-xlrg}) {
         display: flex;
         flex-direction: row;
@@ -34,6 +39,11 @@
       width: 100%;
       padding: 16px;
 
+      // 678px
+      @media (min-width: #{$screen-mobile-xlrg}) {
+      padding-left: 24px;
+      }
+
       p {
         margin-top: 0;
       } 
@@ -41,7 +51,7 @@
       // 1280px
       @media (min-width: #{$screen-desktop-large}) {
         width: calc(100% - #{$sidebar-width} - #{$content-margin});
-        margin-right: 25px;
+        margin-right: 24px;
         padding-top: 0;
       }
     }
@@ -87,6 +97,11 @@
     // 480px
     @media (min-width: #{$screen-mobile-large}) {
       width: 80%;
+    }
+
+    // 678px
+    @media (min-width: #{$screen-mobile-xlrg}) {
+      margin-right: 24px;
     }
 
     // 1280px
