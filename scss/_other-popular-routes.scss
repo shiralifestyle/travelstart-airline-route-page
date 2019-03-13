@@ -17,7 +17,7 @@
     padding: 48px 0 64px 0;
   }
 
-  h3 {
+  h2 {
     padding-bottom: 16px;
 
     // 1280px
@@ -104,6 +104,8 @@
       background-repeat: no-repeat;
       width: 33%;
       height: auto;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
     }
 
     &__text {

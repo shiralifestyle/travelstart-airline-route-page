@@ -32,13 +32,13 @@ html, body {
   }
 }
 
-h2, h3, h4, h5 {
+h2, h3, h4 {
   color: #1E3945;
   margin: 8px 0 8px 0;
 }
 
 @media (min-width: 1280px) {
-  h2, h3, h4, h5 {
+  h2, h3, h4 {
     margin: 0;
   }
 }
@@ -66,6 +66,8 @@ a {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 }
 
 .card__text {
@@ -80,7 +82,7 @@ a {
   }
 }
 
-.card__text h4 {
+.card__text h3 {
   font-size: 19px;
   font-weight: normal;
 }
@@ -139,6 +141,7 @@ a {
 @media (min-width: 678px) {
   .overview__content {
     padding-left: 24px;
+    padding-top: 0;
   }
 }
 
@@ -249,7 +252,7 @@ aside {
   }
 }
 
-.city-information-header h3 {
+.city-information-header h2 {
   color: white;
   transform: translatey(180px);
   font-size: 1.5rem;
@@ -258,46 +261,46 @@ aside {
 }
 
 @media (min-width: 360px) {
-  .city-information-header h3 {
+  .city-information-header h2 {
     margin-left: 20px;
     transform: translatey(190px);
   }
 }
 
 @media (min-width: 375px) {
-  .city-information-header h3 {
+  .city-information-header h2 {
     transform: translatey(190px);
   }
 }
 
 @media (min-width: 414px) {
-  .city-information-header h3 {
+  .city-information-header h2 {
     transform: translatey(210px);
   }
 }
 
 @media (min-width: 480px) {
-  .city-information-header h3 {
+  .city-information-header h2 {
     transform: translatey(210px);
     margin-left: 25px;
   }
 }
 
 @media (min-width: 678px) {
-  .city-information-header h3 {
+  .city-information-header h2 {
     transform: translatey(240px);
   }
 }
 
 @media (min-width: 1000px) {
-  .city-information-header h3 {
+  .city-information-header h2 {
     transform: translatey(210px);
     margin-left: 0;
   }
 }
 
 @media (min-width: 1280px) {
-  .city-information-header h3 {
+  .city-information-header h2 {
     color: white;
     transform: translatey(160px);
     font-size: 1.5rem;
@@ -463,13 +466,13 @@ aside {
   width: 70%;
 }
 
-.city-information__card h4 {
+.city-information__card h3 {
   font-size: 1.25rem;
   font-weight: normal;
   padding-bottom: 1.375rem;
 }
 
-.city-information__content h4 {
+.city-information__content h3 {
   font-size: 1.25rem;
   font-weight: normal;
   padding-bottom: 6px;
@@ -640,24 +643,24 @@ aside {
   }
 }
 
-.activities-main h3 {
+.activities-main h2 {
   padding-bottom: 16px;
 }
 
 @media (min-width: 678px) {
-  .activities-main h3 {
+  .activities-main h2 {
     text-align: center;
   }
 }
 
 @media (min-width: 1000px) {
-  .activities-main h3 {
+  .activities-main h2 {
     text-align: left;
   }
 }
 
 @media (min-width: 1280px) {
-  .activities-main h3 {
+  .activities-main h2 {
     max-width: 1160px;
     margin: 0 auto;
     padding-bottom: 24px;
@@ -702,6 +705,7 @@ aside {
   width: 100%;
   background-color: #FFFFFF;
   box-shadow: 0 0 2px 0 rgba(5, 35, 49, 0.14), 0 2px 2px 0 rgba(5, 35, 49, 0.12);
+  border-radius: 2px;
 }
 
 .activities-main__item + .activities-main__item {
@@ -740,7 +744,7 @@ aside {
   font-size: 14px;
   line-height: 21px;
   margin: 0;
-  padding: 0;
+  padding-top: 8px;
 }
 
 @media (min-width: 1280px) {
@@ -759,24 +763,24 @@ aside {
   }
 }
 
-.accomodation-main h3 {
+.accomodation-main h2 {
   padding-bottom: 16px;
 }
 
 @media (min-width: 678px) {
-  .accomodation-main h3 {
+  .accomodation-main h2 {
     text-align: center;
   }
 }
 
 @media (min-width: 1000px) {
-  .accomodation-main h3 {
+  .accomodation-main h2 {
     text-align: left;
   }
 }
 
 @media (min-width: 1280px) {
-  .accomodation-main h3 {
+  .accomodation-main h2 {
     max-width: 1160px;
     margin: 0 auto;
     padding-bottom: 24px;
@@ -821,6 +825,7 @@ aside {
   width: 100%;
   background-color: #FFFFFF;
   box-shadow: 0 0 2px 0 rgba(5, 35, 49, 0.14), 0 2px 2px 0 rgba(5, 35, 49, 0.12);
+  border-radius: 2px;
 }
 
 .accomodation-main__item + .accomodation-main__item {
@@ -872,7 +877,7 @@ aside {
   flex-grow: 1;
 }
 
-.card__text h4 {
+.card__text h3 {
   font-size: 19px;
   font-weight: normal;
 }
@@ -921,7 +926,7 @@ aside {
   }
 }
 
-.more-accomodation h4 {
+.more-accomodation h3 {
   text-align: center;
   padding: 0 0 10px 0;
   font-size: 18px;
@@ -929,20 +934,20 @@ aside {
 }
 
 @media (min-width: 414px) {
-  .more-accomodation h4 {
+  .more-accomodation h3 {
     padding: 0 4px 10px 4px;
   }
 }
 
 @media (min-width: 1000px) {
-  .more-accomodation h4 {
+  .more-accomodation h3 {
     padding-bottom: 0;
     padding-right: 16px;
   }
 }
 
 @media (min-width: 1280px) {
-  .more-accomodation h4 {
+  .more-accomodation h3 {
     padding-right: 16px;
     padding-bottom: 0;
     font-size: 20px;
@@ -997,12 +1002,12 @@ aside {
   }
 }
 
-.popular-routes h3 {
+.popular-routes h2 {
   padding-bottom: 16px;
 }
 
 @media (min-width: 1280px) {
-  .popular-routes h3 {
+  .popular-routes h2 {
     padding-bottom: 32px;
   }
 }
@@ -1092,6 +1097,8 @@ aside {
   background-repeat: no-repeat;
   width: 33%;
   height: auto;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 }
 
 .popular-routes__text {
