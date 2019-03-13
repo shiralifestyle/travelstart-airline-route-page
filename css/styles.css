@@ -70,10 +70,6 @@ a {
   border-top-right-radius: 2px;
 }
 
-.card-img .activities {
-  cursor: none;
-}
-
 .card__text {
   display: flex;
   flex-direction: column;
@@ -749,6 +745,10 @@ aside {
   line-height: 21px;
   margin: 0;
   padding-top: 8px;
+}
+
+.card-img .activities {
+  cursor: none;
 }
 
 .accomodation-main {
