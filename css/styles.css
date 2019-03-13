@@ -249,57 +249,57 @@ aside {
   }
 }
 
-.city-information-header h3 {
+.city-information-header {
   color: white;
   transform: translatey(180px);
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: bold;
   margin-left: 16px;
 }
 
 @media (min-width: 360px) {
-  .city-information-header h3 {
+  .city-information-header {
     margin-left: 20px;
     transform: translatey(190px);
   }
 }
 
 @media (min-width: 375px) {
-  .city-information-header h3 {
+  .city-information-header {
     transform: translatey(190px);
   }
 }
 
 @media (min-width: 414px) {
-  .city-information-header h3 {
+  .city-information-header {
     transform: translatey(210px);
   }
 }
 
 @media (min-width: 480px) {
-  .city-information-header h3 {
+  .city-information-header {
     transform: translatey(210px);
     margin-left: 25px;
   }
 }
 
 @media (min-width: 678px) {
-  .city-information-header h3 {
+  .city-information-header {
     transform: translatey(240px);
   }
 }
 
 @media (min-width: 1000px) {
-  .city-information-header h3 {
+  .city-information-header {
     transform: translatey(210px);
     margin-left: 0;
   }
 }
 
 @media (min-width: 1280px) {
-  .city-information-header h3 {
+  .city-information-header {
     color: white;
-    transform: translatey(170px);
+    transform: translatey(160px);
     font-size: 1.5rem;
     font-weight: bold;
     margin-left: 0;
@@ -463,13 +463,13 @@ aside {
   width: 70%;
 }
 
-.city-information__card h4 {
+.city-information__card h3 {
   font-size: 1.25rem;
   font-weight: normal;
   padding-bottom: 1.375rem;
 }
 
-.city-information__content h4 {
+.city-information__content h3 {
   font-size: 1.25rem;
   font-weight: normal;
   padding-bottom: 6px;
@@ -540,6 +540,7 @@ aside {
 
 .route__header {
   text-align: center;
+  font-size: 24px;
 }
 
 @media (min-width: 1000px) {
@@ -759,24 +760,24 @@ aside {
   }
 }
 
-.accomodation-main h3 {
+.accomodation-main h2 {
   padding-bottom: 16px;
 }
 
 @media (min-width: 678px) {
-  .accomodation-main h3 {
+  .accomodation-main h2 {
     text-align: center;
   }
 }
 
 @media (min-width: 1000px) {
-  .accomodation-main h3 {
+  .accomodation-main h2 {
     text-align: left;
   }
 }
 
 @media (min-width: 1280px) {
-  .accomodation-main h3 {
+  .accomodation-main h2 {
     max-width: 1160px;
     margin: 0 auto;
     padding-bottom: 24px;
