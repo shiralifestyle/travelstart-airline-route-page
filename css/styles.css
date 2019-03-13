@@ -70,6 +70,10 @@ a {
   border-top-right-radius: 2px;
 }
 
+.card-img .activities {
+  cursor: none;
+}
+
 .card__text {
   display: flex;
   flex-direction: column;
@@ -747,12 +751,6 @@ aside {
   padding-top: 8px;
 }
 
-@media (min-width: 1280px) {
-  .activities-main__item:hover {
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 18px 0 rgba(0, 0, 0, 0.1);
-  }
-}
-
 .accomodation-main {
   padding: 32px 16px 48px 16px;
 }
@@ -884,10 +882,8 @@ aside {
 
 .card-btn {
   width: 106px;
-  align-self: flex-end;
   text-align: center;
   border-radius: 2px;
-  justify-content: flex-end;
 }
 
 .card-btn p {

@@ -62,6 +62,10 @@ a {
   border-top-right-radius: 2px;
 }
 
+.card-img .activities {
+  cursor: none;
+}
+
 .card__text {
   display: flex;
   flex-direction: column;
