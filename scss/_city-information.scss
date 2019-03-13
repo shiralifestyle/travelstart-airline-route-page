@@ -28,7 +28,7 @@ $content-margin: 24px;
     background-size: cover;
   }
 
-  &-header h3 {
+  &-header h2 {
     color: white;
     transform: translatey(180px);
     font-size: 1.5rem;
@@ -71,7 +71,7 @@ $content-margin: 24px;
     // 1280px
     @media (min-width: #{$screen-desktop-large}) {
       color: white;
-      transform: translatey(170px);
+      transform: translatey(160px);
       font-size: 1.5rem;
       font-weight: bold;
       margin-left: 0;
