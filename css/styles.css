@@ -12,6 +12,7 @@ html, body {
   padding: 0;
   margin: 0;
   font-size: 16px;
+  cursor: default;
 }
 
 .fixed-container {
@@ -747,8 +748,8 @@ aside {
   padding-top: 8px;
 }
 
-.card-img .activities {
-  cursor: none;
+.card-img.activities {
+  cursor: default;
 }
 
 .accomodation-main {
