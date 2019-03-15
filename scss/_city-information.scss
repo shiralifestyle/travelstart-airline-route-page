@@ -26,6 +26,7 @@ $content-margin: 24px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    
   }
 
   &-header h2 {
@@ -64,7 +65,7 @@ $content-margin: 24px;
 
     // 1000px
     @media (min-width: #{$screen-tablet-large}) {
-      transform: translatey(210px);
+      transform: translatey(190px);
       margin-left: 0;
     }
     
@@ -132,7 +133,7 @@ $content-margin: 24px;
   &__card {
     width: 90%;
     margin-bottom: 8px;
-    padding: 15px;
+    padding: 16px;
 
     // 360px
     @media (min-width: #{$screen-mobile-small-medium}) {
@@ -162,7 +163,7 @@ $content-margin: 24px;
 
   &__content {
     width: calc(100% - #{$info-width} - #{$content-margin}); 
-    padding: 10px;
+    padding: 16px;
     width: 90%;
     margin: 0 auto;
 
