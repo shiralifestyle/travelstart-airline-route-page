@@ -3,8 +3,8 @@
 
   // 320px
   .overview {
-    background-color: $white;
     margin-bottom: 30px;
+    padding-top: 82px;
 
     // 678px
     @media (min-width: #{$screen-mobile-xlrg}) {
