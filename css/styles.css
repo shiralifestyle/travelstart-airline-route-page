@@ -716,7 +716,7 @@ aside {
 }
 
 .activities-main__item + .activities-main__item {
-  margin-top: 10px;
+  margin-top: 16px;
 }
 
 @media (min-width: 1000px) {
@@ -1094,7 +1094,7 @@ aside {
 }
 
 .popular-routes__card + .popular-routes__card {
-  margin-top: 8px;
+  margin-top: 16px;
 }
 
 @media (min-width: 1000px) {
