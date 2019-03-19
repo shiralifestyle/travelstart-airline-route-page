@@ -3,6 +3,7 @@ $mobile: 320px;
 $tablet: 768px;
 $desktop: 1280px;
 */
+/* ---- GLOBAL ---- */
 *, *:after, *:before {
   box-sizing: border-box;
 }
@@ -228,7 +229,7 @@ aside {
   text-align: center;
 }
 
-/* ---- City Information ---- */
+/* ---- CITY INFORMATION ---- */
 .city-information {
   background-image: url("../images/johannesburg_hero.jpg");
   background-repeat: no-repeat;
@@ -495,6 +496,7 @@ aside {
   }
 }
 
+/* ---- ROUTE INFORMATION ---- */
 .route {
   display: flex;
   flex-direction: column;
@@ -639,6 +641,7 @@ aside {
   font-size: 1rem;
 }
 
+/* ---- THINGS TO DO ---- */
 .activities-main {
   background-color: #FAFBFB;
   padding: 32px 16px 48px 16px;
@@ -758,6 +761,7 @@ aside {
   cursor: default;
 }
 
+/* ---- WHERE TO STAY ---- */
 .accomodation-main {
   padding: 32px 16px 48px 16px;
 }
@@ -907,6 +911,7 @@ aside {
   }
 }
 
+/* ---- MORE ACCOMMODATION ---- */
 .more-accomodation {
   display: flex;
   flex-direction: column;
@@ -997,6 +1002,7 @@ aside {
   }
 }
 
+/* ---- OTHER POPULAR ROUTES ---- */
 .popular-routes {
   background-color: #FAFBFB;
   padding: 32px 16px 48px 16px;
