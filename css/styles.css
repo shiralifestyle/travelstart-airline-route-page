@@ -70,7 +70,6 @@ a {
 .card-img {
   height: 216px;
   width: auto;
-  cursor: pointer;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -377,7 +376,7 @@ aside {
 
 .city-information__card {
   width: 90%;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   padding: 16px;
 }
 
@@ -835,7 +834,7 @@ aside {
 }
 
 .accomodation-main__item + .accomodation-main__item {
-  margin-top: 10px;
+  margin-top: 16px;
 }
 
 @media (min-width: 1000px) {
@@ -870,12 +869,6 @@ aside {
   padding: 8px 0 16px 0;
 }
 
-@media (min-width: 1280px) {
-  .accomodation-main__item:hover {
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 18px 0 rgba(0, 0, 0, 0.1);
-  }
-}
-
 .card__text {
   display: flex;
   flex-direction: column;
@@ -900,6 +893,12 @@ aside {
   font-weight: normal;
   padding: 8px 16px;
   margin: 0;
+}
+
+@media (min-width: 1000px) {
+  .card-btn p {
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 1000px) {

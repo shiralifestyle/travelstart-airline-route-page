@@ -68,7 +68,7 @@ $default-spacing: 24px;
     border-radius: 2px;
 
     & + & {
-      margin-top: 10px;
+      margin-top: 16px;
 
       // 1000px
       @media (min-width: #{$screen-tablet-large}) {
@@ -99,14 +99,6 @@ $default-spacing: 24px;
       padding: 8px 0 16px 0;
     }
   }
-
-  &__item:hover {
-
-    // 1280px
-    @media (min-width: #{$screen-desktop-large}) {
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 18px 0 rgba(0, 0, 0, 0.1);
-    }
-  }
 }
 
 .card__text {
@@ -132,6 +124,11 @@ $default-spacing: 24px;
     font-weight: normal;
     padding: 8px 16px;
     margin: 0;
+  
+    // 1000px
+    @media (min-width: #{$screen-tablet-large}) {
+      cursor: pointer;
+    }
   }
 }
 
@@ -139,7 +136,6 @@ $default-spacing: 24px;
   // 1000px
   @media (min-width: #{$screen-tablet-large}) {
     background-image: linear-gradient(0deg, rgba(209, 239, 253, 0.4), rgba(209, 239, 253, 0.4));
-    
   }
 }
 
