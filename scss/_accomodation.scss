@@ -216,9 +216,9 @@ $default-spacing: 24px;
 .see-all-btn:hover {
   // 1000px
   @media (min-width: #{$screen-tablet-large}) {
-    background-color: #1bb3f5;
-    border-color: #1bb3f5;
-    color: #fff;
+    background: transparent;
+    border-color: $dodger-blue;
+    color: $dodger-blue;
     background-image: linear-gradient(0deg, rgba(209, 239, 253, 0.4), rgba(209, 239, 253, 0.4));
   }
 }
